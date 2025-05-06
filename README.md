@@ -1,39 +1,107 @@
-# Global-Electronics-SQL-database
-Table,Field,Description
-Sales,Order Number,Unique ID for each order
-Sales,Line Item,Identifies individual products purchased as part of an order
-Sales,Order Date,Date the order was placed
-Sales,Delivery Date,Date the order was delivered
-Sales,CustomerKey,Unique key identifying which customer placed the order
-Sales,StoreKey,Unique key identifying which store processed the order
-Sales,ProductKey,Unique key identifying which product was purchased
-Sales,Quantity,Number of items purchased
-Sales,Currency Code,Currency used to process the order
-Customers,CustomerKey,Primary key to identify customers
-Customers,Gender,Customer gender
-Customers,Name,Customer full name
-Customers,City,Customer city
-Customers,State Code,Customer state (abbreviated)
-Customers,State,Customer state (full)
-Customers,Zip Code,Customer zip code
-Customers,Country,Customer country
-Customers,Continent,Customer continent
-Customers,Birthday,Customer date of birth
-Products,ProductKey,Primary key to identify products
-Products,Product Name,Product name
-Products,Brand,Product brand
-Products,Color,Product color
-Products,Unit Cost USD,Cost to produce the product in USD
-Products,Unit Price USD,Product list price in USD
-Products,SubcategoryKey,Key to identify product subcategories
-Products,Subcategory,Product subcategory name
-Products,CategoryKey,Key to identify product categories
-Products,Category,Product category name
-Stores,StoreKey,Primary key to identify stores
-Stores,Country,Store country
-Stores,State,Store state
-Stores,Square Meters,Store footprint in square meters
-Stores,Open Date,Store open date
-Exchange Rates,Date,Date
-Exchange Rates,Currency,Currency code
-Exchange Rates,Exchange,Exchange rate compared to USD
+# **SQL Case Study: Global Electronics E-Commerce Analysis**  
+### **Author:** Sabbir  
+### **Tools Used:** MySQL  
+### **Project Type:** SQL-Based Business Intelligence  
+
+## **📌 Introduction**
+This case study explores **Global Electronics**, an international retailer specializing in electronic products. Using **SQL-based data analysis**, the project uncovers **sales trends, customer behavior, product performance, and delivery efficiency** to enable **data-driven decision-making** in e-commerce operations.
+
+---
+
+## **🔍 Objectives**
+✔ **Sales and Revenue Analysis** – Identify top-selling products & seasonal trends.  
+✔ **Customer Behavior Analysis** – Segment customers based on purchase patterns using **RFM segmentation**.  
+✔ **Product & Delivery Performance** – Evaluate order fulfillment and logistics efficiency.  
+✔ **Profitability Analysis** – Study revenue changes over multiple years & compare online vs. in-store sales.  
+
+---
+
+## **🏆 Business Goals**
+🚀 **Find top revenue-generating products** for strategic marketing.  
+📊 **Analyze seasonal variations** in order volume and revenue peaks.  
+⏱ **Measure delivery time trends** to assess fulfillment efficiency.  
+💰 **Compare Average Order Value (AOV) between online & in-store transactions**.  
+
+---
+
+## **📂 Dataset Overview**
+The dataset originates from **Maven Analytics** and includes structured data tables for:  
+- **Customers** – Demographics & purchasing details.  
+- **Products** – Specifications, brands, and pricing.  
+- **Sales** – Order transactions, revenue, and store locations.  
+- **Stores** – Geographic store operations and retail analytics.  
+- **Exchange Rates** – Currency conversions for international markets.  
+
+---
+
+## **🛠 Schema Overview**
+The database consists of **key relational tables**:  
+- **Customers** (`CustomerKey`, `Name`, `Gender`, `Country`, `Continent`, `Birthday`)  
+- **Products** (`ProductKey`, `Brand`, `Color`, `Unit_Cost_USD`, `Unit_Price_USD`, `CategoryKey`)  
+- **Sales** (`Order_Number`, `ProductKey`, `StoreKey`, `Quantity`, `Currency_Code`)  
+- **Exchange Rates** (`Date`, `Currency`, `Exchange`)  
+- **Stores** (`StoreKey`, `Country`, `State`, `Square_Meters`, `Open_Date`)  
+
+---
+
+## **📈 Key Metrics**
+✔ **Total Revenue:** `$55.75M`  
+✔ **Total Orders:** `26,326`  
+✔ **Total Products Sold:** `1,977,757` units  
+✔ **Average Delivery Time:** `5 days`  
+✔ **Total Customers:** `15,266`  
+
+---
+
+## **📊 Revenue Trends**
+📆 **Yearly Revenue Analysis:**  
+✔ **Highest revenue in 2019** (`$18.26M`), followed by a decline in 2020 due to market conditions.  
+✔ **Seasonality effects:** Sales **peak in December, January & February**, while **March & April show the lowest demand**.  
+
+---
+
+## **📦 Product Analysis**
+🏆 **Top Revenue-Generating Categories:**  
+1. **Desktops** – `$9.9M`  
+2. **Televisions** – `$4.3M`  
+3. **Projectors & Screens** – `$3.7M`  
+4. **Water Heaters** – `$3.5M`  
+5. **Camcorders** – `$3.3M`  
+
+💰 **Highest Profit Products:**  
+1. **WWI Desktop PC2.33 X2330 Black** – `$337K`  
+2. **Adventure Works Desktop PC2.33 XD233 Silver** – `$311K`  
+3. **Adventure Works 52" LCD HDTV X590 White** – `$263K`  
+
+---
+
+## **👥 Customer Behavior Analysis (RFM Segmentation)**
+✔ **Champions:** `2,111` – High-value repeat buyers.  
+✔ **Loyal Customers:** `1,305` – Consistent frequent purchasers.  
+✔ **Potential Loyalists:** `1,306` – Strong engagement but lower purchase frequency.  
+✔ **At-Risk Customers:** `903` – Declining purchase trends.  
+✔ **Churned Customers:** `1,102` – Inactive buyers.  
+
+---
+
+## **📡 Sales Channel Analysis**
+✔ **In-Store Sales:** `78.8%` of total orders.  
+✔ **Online Sales:** `21.2%` of total transactions.  
+✔ **AOV Comparison:**  
+   - **Online:** `$2,043`  
+   - **In-Store:** `$2,137`  
+
+---
+
+## **🚀 Final Takeaways**
+📊 **This case study showcases proficiency in SQL for business intelligence, financial analysis, and e-commerce strategy.**  
+💡 **Key insights drive improvements in product marketing, revenue forecasting, and customer engagement.**  
+📂 **Strong portfolio material for business analytics, data modeling, and SQL-based decision-making.**  
+
+---
+
+## **📲 Connect With Me**
+🔗 [**LinkedIn**](https://www.linkedin.com/in/sabbirjamilsuchon)  
+📘 [**Facebook**](https://www.facebook.com/sabbirjamilsuchon)  
+
+---
